@@ -1,0 +1,2 @@
+class TableProcessor:
+    pass
