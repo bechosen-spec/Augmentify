@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import selector
 
-st.title("Data Augmentation App")
+st.title("Augmentify - Data Augmentation App")
 
 
 uploaded_file = st.file_uploader("Upload a file", type=["csv", "txt", "jpg", "png"])
@@ -39,10 +39,10 @@ if uploaded_file:
     if result.is_writeable:
         st.write(result.content)
 
+
     # provide download link
     st.markdown(" ### ***Download Augmented Data*** ")
     download_link = result.get_download_link()
     if download_link is None:
         st.markdown("No augmented data to download")
     else:
-        st.markdown(download_link, unsafe_allow_html=True)
