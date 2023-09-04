@@ -60,7 +60,7 @@ import shutil
 import zipfile
 import tempfile
 
-st.title("Data Augmentation App")
+st.title("Augmentify - Data Augmentation App")
 
 def augment_text(text, synonym_replacement_prob=0.1):
     words = text.split()
