@@ -45,4 +45,3 @@ if uploaded_file:
     download_link = result.get_download_link()
     if download_link is None:
         st.markdown("No augmented data to download")
-    else:
